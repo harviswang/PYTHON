@@ -98,3 +98,14 @@ print unicode('A')
 print str(u"abc")
 print u"äöü".encode('utf-8')
 print unicode(u"äöü".encode('utf-8'), 'utf-8')
+
+## compare two string by operator ==, !=
+## 
+if "good" == "good":
+	print "string can be compare by '==' operator"
+if "good" != "bad":
+	print "string can be compare by '!=' operator"
+if "good" >= "bad":
+	print "string can be compare by '>=' operator"
+if "good" <= "luck":
+	print "string can be compare by '<=' operator"
