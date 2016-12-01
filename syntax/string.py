@@ -54,6 +54,7 @@ print text
 ## Python has no separate character type
 ## a character is simply a string os size one
 ## string index can be [0, string.length], [-string.length, -1]
+## [] 运算符是左闭区间, 右侧开区间
 word = 'Python Programming Language'
 print word[-1] # -> e why? last character
 print word[-2] # -> g second-last character
@@ -109,3 +110,13 @@ if "good" >= "bad":
 	print "string can be compare by '>=' operator"
 if "good" <= "luck":
 	print "string can be compare by '<=' operator"
+print
+
+## index() method of string object
+string = 'id2=9787111289234'
+n = string.index("=")
+print string, ',limit char "=" index:', n
+token = string[0: n]
+print token
+token2 = string[n + 1:]
+print token2
